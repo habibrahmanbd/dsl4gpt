@@ -1,6 +1,14 @@
-\begin{tabular}{ll}
-$S \rightarrow $ \texttt{forward(L, $\theta$) | repeat(S, T) | S.S }\\
-$L \rightarrow $ \texttt{1 | 2}\\
-$ \theta \rightarrow $ \texttt{0\degree | 9\degree | 90\degree | ... | 360\degree}\\ 
-$T \rightarrow $ \texttt{1 | 2 | ... | 9}\\
-\end{tabular}
+\begin{align*}
+    S &\rightarrow \lambda \;|\; \lambda \cdot \lambda \\
+    \lambda &\rightarrow \text{Forward}(\mathcal{L}, \otimes, \bigotimes) \;|\; \text{Repeat}(S, N, \text{FLAG}) \;|\; \text{Penup}(S) \;|\; \text{Home}(S) \\
+    \otimes &\rightarrow \otimes_u \;|\; \otimes_0 \;|\; \otimes_u \ominus C \;|\; \otimes \ominus C \;|\; \otimes \ominus \otimes \;|\; \otimes\in \\
+    \mathcal{L} &\rightarrow \mathcal{L}_u \;|\; \mathcal{L}_0 \;|\; \mathcal{L}_u \ominus C \;|\; \mathcal{L} \ominus \mathcal{L} \;|\; \mathcal{L}\in \\
+    \ominus &\rightarrow | \;- \;|\; * \;|\; / \\
+    N, C, i &\rightarrow 1 \;|\; 2 \;|\; 3 \;|\; \ldots \;|\; 9 \\
+    \mathcal{L}_u &\rightarrow 12 \\
+    \mathcal{L}_0 &\rightarrow 0 \\
+    \mathcal{L}\in &\rightarrow 1 \\
+    \otimes_u &\rightarrow 3600 \\
+    \otimes_0 &\rightarrow 00 \\
+    \otimes\in &\rightarrow 90 \\
+\end{align*}

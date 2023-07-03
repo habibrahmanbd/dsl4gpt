@@ -1,0 +1,9 @@
+\begin{align*}
+    \text{Action} & := \text{attack}(u, x, y) | \text{harvest}(u, x, y) | \text{build}(u, x, y, t) | \text{move}(u, x, y) \\
+    u & := \text{closest}(\text{unittype}, x, y, \text{player}) | \text{farthest}(\text{unittype}, x, y, \text{player}) \\
+    x & := \text{constant(int)} | \text{closest}(\text{unittype}, x, y, \text{player}).x | \text{farthest}(\text{unittype}, x, y, \text{player}).x \\
+    y & := \text{constant(int)} | \text{closest}(\text{unittype}, x, y, \text{player}).y | \text{farthest}(\text{unittype}, x, y, \text{player}).y \\
+    t & := \text{base} | \text{barracks} \\
+    \text{unittype} & := \text{worker} | \text{base} | \text{barracks} | \text{melee} | \text{ranged} \\
+    \text{player} & := \text{ally} | \text{enemy} \\
+\end{align*}

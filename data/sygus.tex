@@ -1,0 +1,15 @@
+\begin{align*}
+    \text{Expression } E & := S | I | B \\
+    \text{String expression } S & := \text{Concat}(S1, S2) | \text{Left}(S, I) | \text{Right}(S, I) | \text{Substr}(S, I_1, I_2) \\
+    & \quad | \text{Replace}(S1, I1, I2, S2) | \text{Trim}(S) | \text{Repeat}(S, I) | \text{Substitute}(S1, S2, S3) \\
+    & \quad | \text{Substitute}(S1, S2, S3, I) | \text{ToText}(I) | \text{LowerCase}(S) | \text{UpperCase}(S) \\
+    & \quad | \text{ProperCase}(S) | T | X | \text{If}(B, S_1, S_2) \\
+    \text{Integer expression } I & := I1 + I2 | I1 - I2 | \text{Find}(S1, S2) | \text{Find}(S1, S2, I) | \text{Len}(S) | J \\
+    \text{Boolean expression } B & := \text{Equals}(S1, S2) | \text{GreaterThan}(I1, I2) | \text{GreaterThanOrEqualTo}(I1, I2) \\
+    \text{String constants } T & := \text{""} | \text{" "} | \text{","} | \text{"."} | \text{"!"} | \text{"?"} | \text{"("} | \text{")"} | \text{"["} | \text{"]"} \\
+    & \quad | \text{"<"} | \text{">"} | \text{"{"} | \text{"}"} | \text{"-"} | \text{"+"} | \text{"_"} | \text{"/"} | \text{"$"} | \text{"#"} \\
+    & \quad | \text{":"} | \text{";"} | \text{"@"} | \text{"%"} | \text{"0"} | \text{string constants extracted from I/O examples} \\
+    \text{Integer constants } J & := 0 | 1 | 2 | 3 | 99 \\
+    \text{Input } X & := x1 | \ldots | xk \\
+\end{align*}
+    
