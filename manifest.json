@@ -3,7 +3,7 @@
     "name_for_human": "DSL4LLM",
     "name_for_model": "dsl4llm",
     "description_for_human": "Plugin for Domain Specific Languages for Large Language Models to generate code based on the DSL for Program Synthesis.",
-    "description_for_model": "Help the user with the generation of code based on the DSL for Program Synthesis.",
+    "description_for_model": "Help the user with the generation of code based on the Domain Specific Languages (DSL) for Program Synthesis.",
     "auth": {
         "type": "none"
     },
