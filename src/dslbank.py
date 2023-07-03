@@ -5,10 +5,6 @@ def get_dsl(name: str):
         with open(f"data/{name}.tex", "r") as f:
             dsl = f.read()
             f.close()
-            return {
-                "dsl": dsl, 
-                "domain": name,
-                "format": "tex"
-            }
+            return dsl
     except:
-        return {"message": "DSL not found."}
+        return f"Error: DSL {name} not found."
